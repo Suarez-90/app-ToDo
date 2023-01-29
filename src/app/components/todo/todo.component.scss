@@ -1,0 +1,93 @@
+main{
+    height: 93vh;
+    margin-top: 64px;
+
+    .section_form{
+        background: #414a52;
+        padding: 1rem;        
+    }
+
+    .section_todo{
+        background: #355C7D;  /* fallback for old browsers */
+        // background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top right, #355C7D , #6C5B7B, #C06C84 ); /* W3C, IE 10+/ Edge, Firefox 16+,  Chrome 26+, Opera 12+, Safari 7+ */;
+        
+        .title_drag{
+            margin-bottom: 0;
+            background-color: rgba(210, 222, 222, 0.705);
+            border-radius: 4px 4px 0 0;
+            color: #565151;
+            font-size: 1.5em;
+            font-weight: 500;
+
+            span{
+                font-weight: normal;
+            }
+        }
+    }
+}
+.example-container {
+    width: 420px;
+    max-width: 100%;
+    margin: 15px 25px 0;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;            
+}
+
+.example-list {
+    border: solid 1px #ccc;
+    min-height: 80px;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    display: block;
+}
+
+.example-box {
+    padding: 20px 10px;
+    border-bottom: solid 1px #ccc;
+    color: rgba(0, 0, 0, 0.903);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    cursor: move;
+    background: white;
+    font-size: 14px;
+}
+
+.cdk-drag-preview {    
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+                0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.drag-placeholder {    
+    background: #a2abb5;
+    border: dotted 2px #999999;    
+    min-height: 80px;
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+.cdk-drop-list-dragging .cdk-drag {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+  }
+
+.cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.example-box:last-child {
+    border: none;
+}
+
+.example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+    
+     
+    
