@@ -30,11 +30,11 @@ function inicializeApp(): Promise<any> {
 
   ],
   providers: [
-    {
-      provide: APP_INITIALIZER,
-      useFactory: () => inicializeApp,
-      multi: true
-    }
+    // {
+    //   provide: APP_INITIALIZER,
+    //   useFactory: () => inicializeApp,
+    //   multi: true
+    // }
   ],
   bootstrap: [AppComponent]
 })
